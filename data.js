@@ -17,7 +17,7 @@
    --------------------------------------------------------- */
 const SITE_CONFIG = {
   name: "Nuno Cruz",
-  role: "Music Producer · Mix Engineer · Dancer",
+  role: "Music Producer · Mix Engineer",
 
   // Frase curta que aparece na primeira secção (hero)
   tagline: "A trip onto my life and work. Music and movement.",
