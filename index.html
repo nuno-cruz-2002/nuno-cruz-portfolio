@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio — Music Production, Mixing &amp; Dance</title>
+<meta name="description" content="Music production, mixing and dance portfolio.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="noise" aria-hidden="true"></div>
+
+<header class="nav" id="site-nav">
+  <div class="nav-inner">
+    <a href="#home" class="logo" data-field="name">Nuno Cruz</a>
+    <nav class="nav-links" id="nav-links">
+      <a href="#portfolio">Portfolio</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+
+  <!-- ===== HERO ===== -->
+  <section id="home" class="hero">
+    <div class="hero-inner">
+      <p class="eyebrow" data-field="role">Music Producer · Mix Engineer · Dancer</p>
+      <h1 class="hero-title" data-field="name">Nuno Cruz</h1>
+      <p class="hero-sub" data-field="tagline">A trip onto my life and work. Music and movement.</p>
+
+      <div class="eq" aria-hidden="true">
+        <span></span><span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span><span></span><span></span>
+      </div>
+
+      <div class="hero-cta">
+        <a href="#portfolio" class="btn btn-primary">View Portfolio</a>
+        <a href="#contact" class="btn btn-ghost">Get in Touch</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PORTFOLIO ===== -->
+  <section id="portfolio" class="section portfolio">
+    <div class="section-head">
+      <p class="eyebrow">Selected Work</p>
+      <h2 class="section-title">Portfolio</h2>
+    </div>
+
+    <div class="filters" role="tablist" aria-label="Filter projects by category">
+      <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">All</button>
+      <button class="filter-btn" data-filter="production" role="tab" aria-selected="false">Production</button>
+      <button class="filter-btn" data-filter="mixing" role="tab" aria-selected="false">Mixing</button>
+      <button class="filter-btn" data-filter="dance" role="tab" aria-selected="false">Dance</button>
+    </div>
+
+    <div class="grid" id="project-grid">
+      <!-- Project cards are generated automatically from data.js -->
+    </div>
+
+    <p class="empty-state" id="empty-state" hidden>Nothing here yet — add a project in <code>data.js</code>.</p>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section id="about" class="section about">
+    <div class="about-grid">
+      <div class="about-portrait" id="about-portrait">
+        <img src="media/my-photo.jpeg" alt="Portrait of Nuno Cruz">
+      </div>
+      <div class="about-copy">
+        <p class="eyebrow">About</p>
+        <h2 class="section-title">Who I Am</h2>
+        <p class="about-text" data-field="about">
+          I'm a young aspiring artist, born in Portugal, in 2002, focused on the world of music, by producing, songwriting, dancing, etc. Each of my projects here reflect my passion, dedication and progress in this area throughout my life, something i wish to keep doing for as long as possible.
+        </p>
+        <ul class="skills">
+          <li><span class="dot dot-production"></span>Music Production</li>
+          <li><span class="dot dot-mixing"></span>Mixing &amp; Mastering</li>
+          <li><span class="dot dot-dance"></span>Dance &amp; Choreography</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section id="contact" class="section contact">
+    <div class="section-head">
+      <p class="eyebrow">Get in Touch</p>
+      <h2 class="section-title">Contact</h2>
+    </div>
+
+    <div class="contact-grid">
+      <div class="contact-info">
+        <a class="contact-email" data-field="emailHref" href="mailto:you@example.com">
+          <span data-field="email">you@example.com</span>
+        </a>
+        <p class="contact-location" data-field="location">Porto, Portugal</p>
+        <div class="socials" id="socials">
+          <!-- Social links are generated automatically from data.js -->
+        </div>
+      </div>
+
+      <form class="contact-form" id="contact-form">
+        <label>
+          Name
+          <input type="text" name="name" required>
+        </label>
+        <label>
+          Email
+          <input type="email" name="email" required>
+        </label>
+        <label>
+          Message
+          <textarea name="message" rows="5" required></textarea>
+        </label>
+        <button type="submit" class="btn btn-primary">Send Message</button>
+        <p class="form-note">Opens your email app with this message ready to send.</p>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p>&copy; <span id="year"></span> <span data-field="name">Nuno Cruz</span>. All rights reserved.</p>
+</footer>
+
+<!-- Inline player used when a project card is expanded -->
+<div class="player-overlay" id="player-overlay">
+  <div class="player-box" id="player-box"></div>
+</div>
+
+<script src="data.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
