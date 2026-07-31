@@ -67,7 +67,7 @@ const PROJECTS = [
     year: 2026,
     description: "Original production ballad for a final project in the Music Production course, featuring live-recorded instruments and a heartfelt vocal performance.",
     type: "audio",
-    src: "media/Hand on Hand.wav",
+    src: "media/Hand On Hand.wav",
     cover: "media/Capa - Hand on Hand.jpeg"
   },
   {
@@ -91,7 +91,7 @@ const PROJECTS = [
   {
     title: "Comeback - Demo",
     category: "production",
-    year: 2025/2026,
+    year: 2025,
     description: "A demo of a song that i wrote and produced, presented in one of he modules of the Music Production course. A work in progress.",
     type: "audio",
     src: "media/Comeback - Demo.wav",
