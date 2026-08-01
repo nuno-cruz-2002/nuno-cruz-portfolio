@@ -30,7 +30,7 @@ const SITE_CONFIG = {
 
   // Redes sociais / plataformas — adiciona ou remove linhas livremente
   socials: [
-    { label: "Instagram",  url: "https://instagram.com/yourname" }
+    { label: "Instagram",  url: "https://www.instagram.com/nunocruz2002?igsh=dndsZmFvdnd3MG1q" }
   ]
 };
 
